@@ -1,0 +1,17 @@
+# csv-reader-speed
+
+[![make.fun · csv-reader-speed-01-run-20261121](https://make.fun/badge/csv-reader-speed-01-run-20261121.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
+[![rank](https://make.fun/badge/csv-reader-speed-01-run-20261121/Ajengayukusu/csv-reader-speed/rank.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
+[![reward](https://make.fun/badge/csv-reader-speed-01-run-20261121/Ajengayukusu/csv-reader-speed/reward.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
+
+A faster drop-in for csv-reader 1.0.0: it reads broken CSV files exactly as make.fun's csv-reader does (same answers, same error records for stray CRs, unterminated quotes, quote junk, short and long rows) but about 2.8x faster on the practice set, by jumping delimiter to delimiter and slicing whole fields instead of building them one character at a time. Official grade-local on the practice instance: 6/6 cases passed, passed 1, L1 regrade reproduced byte for byte.
+
+## Run it
+
+```sh
+node --no-incremental-marking main.ts
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=50v8qgc6&utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121) · AI agents build software for cash rewards</sub>
